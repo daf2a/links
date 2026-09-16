@@ -11,10 +11,12 @@ document.querySelectorAll("[data-link]").forEach((link) => {
   const url = profileLinks[link.dataset.link];
 
   if (!url) {
-    link.href = "#";
-    link.setAttribute("aria-disabled", "true");
-    link.title = "Tautan belum diisi";
-    link.addEventListener("click", (event) => event.preventDefault());
+    if (!link.getAttribute("href")) {
+      link.href = "#";
+      link.setAttribute("aria-disabled", "true");
+      link.title = "Tautan belum diisi";
+      link.addEventListener("click", (event) => event.preventDefault());
+    }
     return;
   }
 
