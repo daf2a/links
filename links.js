@@ -1,9 +1,9 @@
 // Isi URL Anda di sini sebelum dipublikasikan.
 const profileLinks = {
   linkedin: "https://www.linkedin.com/in/daf2a/",
-  website: "https://www.daf2a.com/",
   portfolio: "https://www.daf2a.com/portfolio/?sort=date-desc",
   github: "https://github.com/daf2a",
+  resume: "https://www.daf2a.com/my_cv/main_cv.pdf",
   instagram: "https://www.instagram.com/daf2a_/",
 };
 
